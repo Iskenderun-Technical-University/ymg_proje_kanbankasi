@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C028A3C-153B-464E-AA79-7FBAA5D490DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kanbankası</RootNamespace>
+    <AssemblyName>kanbankası</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnasayfa.Designer.cs">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBagıscı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBagıscı.Designer.cs">
+      <DependentUpon>FrmBagıscı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBagıscılistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBagıscılistesi.Designer.cs">
+      <DependentUpon>FrmBagıscılistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHasta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHasta.Designer.cs">
+      <DependentUpon>FrmHasta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHastaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHastaListesi.Designer.cs">
+      <DependentUpon>FrmHastaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLog.Designer.cs">
+      <DependentUpon>FrmLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYonetici.Designer.cs">
+      <DependentUpon>FrmYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frmkanstogu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmkanstogu.Designer.cs">
+      <DependentUpon>Frmkanstogu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KANBANKASIDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KANBANKASIDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnasayfa.resx">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBagıscı.resx">
+      <DependentUpon>FrmBagıscı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBagıscılistesi.resx">
+      <DependentUpon>FrmBagıscılistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHasta.resx">
+      <DependentUpon>FrmHasta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHastaListesi.resx">
+      <DependentUpon>FrmHastaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmkanstogu.resx">
+      <DependentUpon>Frmkanstogu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLog.resx">
+      <DependentUpon>FrmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYonetici.resx">
+      <DependentUpon>FrmYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="KANBANKASIDataSet.xsc">
+      <DependentUpon>KANBANKASIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet.xss">
+      <DependentUpon>KANBANKASIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet1.xsc">
+      <DependentUpon>KANBANKASIDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet1.xss">
+      <DependentUpon>KANBANKASIDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet10.xsc">
+      <DependentUpon>KANBANKASIDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet10.xss">
+      <DependentUpon>KANBANKASIDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet11.xsc">
+      <DependentUpon>KANBANKASIDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet11.xss">
+      <DependentUpon>KANBANKASIDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet2.xsc">
+      <DependentUpon>KANBANKASIDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet2.xss">
+      <DependentUpon>KANBANKASIDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet3.xsc">
+      <DependentUpon>KANBANKASIDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet3.xss">
+      <DependentUpon>KANBANKASIDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet4.xsc">
+      <DependentUpon>KANBANKASIDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet4.xss">
+      <DependentUpon>KANBANKASIDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet5.xsc">
+      <DependentUpon>KANBANKASIDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet5.xss">
+      <DependentUpon>KANBANKASIDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet6.xsc">
+      <DependentUpon>KANBANKASIDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet6.xss">
+      <DependentUpon>KANBANKASIDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet7.xsc">
+      <DependentUpon>KANBANKASIDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet7.xss">
+      <DependentUpon>KANBANKASIDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet8.xsc">
+      <DependentUpon>KANBANKASIDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet8.xss">
+      <DependentUpon>KANBANKASIDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet9.xsc">
+      <DependentUpon>KANBANKASIDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="KANBANKASIDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KANBANKASIDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KANBANKASIDataSet9.xss">
+      <DependentUpon>KANBANKASIDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kan1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bagıs.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
