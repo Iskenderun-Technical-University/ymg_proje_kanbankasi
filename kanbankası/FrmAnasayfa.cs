@@ -39,6 +39,7 @@ namespace kanbankası
         private void FrmAnasayfa_Load(object sender, EventArgs e)
         {
             timer1.Start();
+           menuStrip1.Enabled = true;
         }
 
         private void bAĞIŞÇIEKLEToolStripMenuItem_Click(object sender, EventArgs e)
@@ -85,6 +86,16 @@ namespace kanbankası
         {
             FrmYonetici fr = new FrmYonetici();
             fr.Show();
+        }
+
+        private void bAĞİŞÇIEKLEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

@@ -55,6 +55,7 @@
             // 
             this.TxtSıfre.Location = new System.Drawing.Point(144, 142);
             this.TxtSıfre.Name = "TxtSıfre";
+            this.TxtSıfre.PasswordChar = '*';
             this.TxtSıfre.Size = new System.Drawing.Size(194, 20);
             this.TxtSıfre.TabIndex = 16;
             // 
@@ -146,6 +147,7 @@
             this.Controls.Add(this.BtnGırıs);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmLog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmLog";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
